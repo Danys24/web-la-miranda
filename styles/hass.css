@@ -1,0 +1,289 @@
+:root{
+	--verde-1: #0F7D20;
+	--verde-2: #46C059;
+	--verde-3: #62C371;
+	--verde-4: #96DFA1;
+	--verde-5: #E1F8E4;
+	--pastel: #FAE8E8;
+	--color-20: #062634;
+	--solor-s4: #F4FBE6;
+	--tittle-color: #293031;
+	--color-t1: #485354;
+	--color-t2: #737A7A;
+	--color-t3: #A0A9AA;
+	--font-size-h2-t: 2.4rem;
+	--font-size-h2-d: 2.8rem;
+	--font-size-p1: 1.63rem;
+	--font-size-p2: 2rem;
+	--font-size-p12: 0.75rem;
+	--font-size-p10: 0.625rem;
+	--font: 'Montserrat', sans-serif;
+}
+
+/*Utils*/
+.block{
+	display: block;
+}
+
+.opacity{
+	opacity: 0.7;
+}
+
+.opacity-1{
+	opacity: 1;
+}
+
+
+/*components*/
+
+.card-materiales{
+	background: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cont-card{
+	width: 100%;
+	height: 12rem;
+	margin-bottom: 1rem;
+}
+
+.card-materiales h3{
+	color: var(--pastel);
+}
+
+/*styles site*/
+h2, h1{
+	color: var(--verde-1);
+	text-align: center;
+	margin: 1rem;
+}
+
+
+p{
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+	color: var(--color-t1);
+}
+
+
+.container-materiales{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-produccion img, .container-aguacate img{
+	object-fit: cover;
+	width: 100%;
+	height: 15rem;
+}
+
+.container-proceso{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.cont-proceso{
+	background-color: rgba(250, 232, 232, 0.7);
+	height: 84%;
+	padding: 1rem;
+	overflow-y: scroll;
+}
+
+.cont-proceso p{
+	color: var(--color-t1);
+	font-size: var(--font-size-p10);
+	font-weight: bold;
+}
+
+.div-hass-miranda{
+	color: var(--color-t2);
+}
+
+
+
+
+.estacionaria{
+	background-image: url("../assets/estacionaria.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.guadaña{
+	background-image: url("../assets/guadaña.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.garrucha{
+	background-image: url("../assets/garrucha.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.bombaespalda{
+	background-image: url("../assets/bombaespalda.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.asada{
+	background-image: url("../assets/asada.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.machete{
+	background-image: url("../assets/machete.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.tijeras{
+	background-image: url("../assets/tijeras.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.mochila{
+	background-image: url("../assets/mochila.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.canastillas{
+	background-image: url("../assets/canastillas.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.herramientas{
+	background-image: url("../assets/herramientas.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+
+
+.materiales{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2rem;
+}
+
+.menu-proceso{
+	width: 100%;
+	height: 16%;
+	display: flex;
+}
+
+.menu-proceso h3{
+	background: var(--pastel);
+	font-size:0.5rem;
+	color: var(--verde-1);
+	width: 20%;
+	padding: 0.4rem 0.3rem;
+	cursor: pointer;
+	text-align: center;
+}
+
+.proceso{
+	background-image: url("../assets/aguacate5.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 15rem;
+	margin-bottom: 2rem;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 0px 5px 1px rgb(100, 100, 100);
+}
+
+.section-proceso{
+	width: 100%;
+}
+
+@media (min-width: 744px){
+
+	.container-biografia p{
+		font-size: 0.8rem;
+	}
+
+	.container-materiales{
+		width: 80%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+	}
+
+	.cont-card{
+		margin: 0;
+	}
+
+	.cont-proceso p{
+		font-size: 1rem;
+	}
+
+	.div-hass-miranda{
+		background: var(--verde-1);
+		color: var(--pastel) !important;
+		border-radius: 10px;
+		padding: 1rem;
+		box-shadow: -9px 9px 5px 2px rgb(100, 100, 100);
+	}
+
+	.div-hass-miranda p{
+		color: var(--pastel) !important;
+	}
+
+	.menu-biografia h3{
+		font-size: 1rem;
+	}
+
+	.menu-proceso h3{
+		font-size:0.8rem;
+	}
+
+	.proceso{
+		width: 80%;
+	}
+	
+}
+
+@media (min-width: 1024px){
+
+	.container-biografia p{
+		font-size: 1.1rem;
+	}
+
+	.container-materiales{
+		width: 90%;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.container-materiales h3{
+		text-align: center;
+	}
+
+}

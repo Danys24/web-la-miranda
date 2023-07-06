@@ -1,0 +1,675 @@
+:root{
+	--verde-1: #0F7D20;
+	--verde-2: #46C059;
+	--verde-3: #62C371;
+	--verde-4: #96DFA1;
+	--verde-5: #E1F8E4;
+	--pastel: #FAE8E8;
+	--color-20: #062634;
+	--solor-s4: #F4FBE6;
+	--tittle-color: #293031;
+	--color-t1: #485354;
+	--color-t2: #737A7A;
+	--color-t3: #A0A9AA;
+	--font-size-h2-t: 2.4rem;
+	--font-size-h2-d: 2.8rem;
+	--font-size-p1: 1.63rem;
+	--font-size-p2: 2rem;
+	--font-size-p12: 0.75rem;
+	--font-size-p10: 0.625rem;
+	--font: 'Montserrat', sans-serif;
+}
+
+/*Reset*/
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
+h1{
+  margin: 0;
+  font-size: 2rem;
+}
+
+h2{
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h3{
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+/*utils*/
+
+.none{
+	display: none;
+}
+
+.menu.display{
+	left: 0;
+}
+
+
+
+/*components*/
+
+.btn{
+	background: var(--pastel);
+	color: var(--verde-1);
+	font-weight: bold;
+	width: 14.2rem;
+	height: 2.8rem;
+	padding: 0.8rem;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.card-text{
+	background: var(--verde-1);
+	color: var(--pastel);
+	border-radius: 10px;
+	padding: 1rem;
+	box-shadow: -10px 10px 5px 2px rgb(100, 100, 100);
+}
+
+.container{
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-n{
+
+}
+
+.section{
+	background: var(--pastel);
+	width: 100%;
+	min-height: 100vh;
+}
+
+.section-n{
+	width: 100%;
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/*styles site*/
+
+.btn-hass{
+	background: var(--verde-1);
+	color: var(--pastel);
+	margin: 1rem;
+}
+
+.btn-menu{
+  background-color: var(--verde-1);
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border: 0;
+  border-radius: 50%;
+  z-index: 10000000;
+}
+
+.btn-menu svg{
+  fill: var(--color-13);
+  font-size: 1.25rem;
+}
+
+.bodegas-imgs{
+	width: 100%;
+	height: 18rem;
+	display: grid;
+	margin-bottom: 1rem;
+	grid-template-columns: repeat(2, 50%);
+	grid-template-rows: repeat(2, 50%);
+}
+
+.bodegas-imgs .img3{
+	grid-column: span 2;
+}
+
+.casas-imgs{
+		width: 100%;
+		height: 8rem;
+		display: grid;
+		margin-bottom: 1rem;
+		grid-template-columns: repeat(2, 50%);
+		grid-template-rows: repeat(1, 100%);
+}
+
+.copy{
+	color: var(--color-13);
+	width: 100%;
+	height: 10%;
+	font-size: var(--font-size-p10);
+	text-align: center;
+}
+
+.container-bodegas, .container-vivienda{
+	width: 100%;
+	margin-bottom: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-bodegas h2, .container-vivienda h2{
+	color: var(--verde-1);
+	text-align: center;
+	margin: 1rem;
+}
+
+.container-bodegas .img, .container-vivienda img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.container-bodegas .img3{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.container-bodegas p, .container-vivienda p{
+	color: var(--color-t2);
+	text-align: justify;
+}
+
+.container-hero{
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.container-info{
+	padding: 1rem;
+}
+
+.container-info h2{
+	margin: 1rem 0;
+	text-align: center;
+	color: var(--color-20);
+	font-weight: bold;
+}
+
+.container-info p{
+	color: var(--color-t1);
+	text-align: justify;
+}
+
+.container-info img{
+	width: 100%;
+}
+
+.container-menu{
+	background: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.container-menu svg{
+	width: 2rem !important;
+	height: 2rem !important;
+}
+
+.container-menu span{
+	margin-left: 0.5rem;
+}
+
+.container-p{
+		padding: 2rem 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+}
+
+.container-p h2{
+		text-align: center;
+		color: var(--color-20);
+		font-weight: bold;
+}
+
+.container-p p{
+		color: var(--color-t1);
+		text-align: center;
+}
+
+.container-p img{
+		width: 100%;
+		height: 16rem;
+		object-fit: cover;
+}
+
+.container-p a{
+	margin: 1.5rem 0;
+}
+
+.datos{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	border-right: 3px solid var(--color-12);
+}
+
+.datos p{
+	color: var(--color-13);
+	font-size: var(--font-size-p10);
+	margin: 0.1rem;
+	padding-left: 0.3rem;
+}
+
+.encabezado{
+	background-color: var(--verde-1);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.encabezado-main{
+	display: none;
+}
+
+.encabezado .small{
+	width: 4rem;
+	height: 4rem;
+	margin: 0 0.5rem;
+}
+
+.encabezado .media{
+	width: 7rem;
+	height: 7rem;
+	margin: 0 0.5rem;
+}
+
+.footer{
+	background: var(--verde-1);
+	color: var(--pastel);
+	width: 100%;
+	height: 6rem;
+	padding-top: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer-menu, .footer-menu a{
+	color: var(--pastel);
+	font-size: var(--font-size-p12);
+}
+
+.hass-imgs{
+	display: flex;
+	flex-direction: column;
+}
+
+.hass-imgs img{
+	width: 100%;
+	height: 12rem;
+	margin-bottom: 1rem;
+	object-fit: cover;
+}
+
+.header{
+	width: 100%;
+	height: 9.8rem;
+
+}
+
+.logo{
+	width: 7rem;
+	height: 7rem;
+	margin: 1rem;
+}
+
+.header-capa{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-container{
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-info{
+	background: rgba(15, 125, 32,0.5);
+	width: 18rem;
+	height: 27rem;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.hero-info p{
+	color: var(--pastel);
+	text-align: justify;
+}
+
+.menu{
+	background-image: url("./assets/finca2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 400000px;
+	transition: all 0.3s ease;
+	z-index: 1000;
+}
+
+.menu a{
+	color: var(--pastel);
+	font-size: 1.2rem;
+	font-weight: bold;
+	width: 90%;
+	height: 3rem;
+	padding: 0.5rem 0.5rem;
+	margin: 1.3rem 1rem;
+	text-align: left;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	transition: all 0.3s ease-out;
+}
+
+.menu a:hover{
+	background: var(--pastel);
+	color: var(--verde-1);
+}
+
+.redes{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+
+}
+
+.redes img{
+	margin: 0 1rem;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 5px;
+	object-fit: cover;
+}
+
+.section-hero{
+	width: 100%;
+	background-image: url("./assets/hero.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.section-hass{
+	width: 100%;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.section-hass h1, .section-hass h2{
+	color: var(--verde-1);
+	margin: 1rem;
+	text-align: center;
+}
+
+.section-productores{
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-productores h2{
+	color: var(--verde-1);
+	margin: 1rem;
+	text-align: center;
+}
+
+.section-productores img{
+	width: 100%;
+}
+
+.section-productores p{
+	color: var(--color-t2);
+	text-align: justify;
+}
+
+
+@media (min-width: 744px){
+
+	.container-bodegas, .container-vivienda{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+	}
+
+	.container-bodegas h2, .container-vivienda h2{
+		grid-column: span 2;
+	}
+
+	.container-productos{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+	}
+
+	.container-menu svg{
+		width: 3rem !important;
+		height: 3rem !important;
+	}
+
+	.container-productores{
+		width: 88%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.container-productores h2, .container-productores h1, .container-productores .p2{
+		grid-column: span 2;
+	}	
+
+	.datos p{
+		margin: 0.4rem 1.4rem;
+	}
+
+	.encabezado{
+		gap: 4rem;
+	}
+
+	.footer-menu, .footer-menu a{
+		font-size: 1rem;
+	}
+
+	.footer p{
+		font-size: var(--font-size-p12);
+	}
+
+	.hass-imgs{
+		width: 80%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+	}
+
+	.hass-imgs img{
+		margin: 0;
+	}
+
+	.hero-info{	
+		width: 26rem;
+		height: 30rem;
+	}
+
+	.logo{
+		width: 15rem;
+		height: 15rem;
+	}
+
+	.menu{
+
+	}
+
+	.menu a{
+		font-size: 2.5rem;
+		height: 4rem;
+	}
+
+	.p-bodegas, .p-viviendas{
+			background: var(--verde-1);
+			color: var(--pastel) !important;
+			border-radius: 10px;
+			padding: 1rem;
+			box-shadow: -9px 9px 5px 2px rgb(100, 100, 100);
+	}
+
+}
+
+@media (min-width: 1024px){
+
+	.btn-menu{
+		display: none;
+	}
+
+	body{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.container-menu{
+		background: var(--pastel);
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.container-menu svg{
+		width: 1.5rem !important;
+		height: 1.5rem !important;
+	}
+
+	.encabezado-header{
+		display: none;
+	}
+
+	.encabezado-main{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 9rem;
+	}
+
+	.header{
+		background: var(--pastel);
+		width: 25%;
+		height: 100vh;
+		position: sticky;
+	}
+
+	.header-capa{
+		background: var(--pastel);
+		padding: 0;
+	}
+
+
+	.logo{
+		width: 12rem;
+		height: 12rem;
+	}
+
+	.main{
+		width: 75%;
+		height: 100vh;
+		overflow-y: scroll;
+	}
+
+	.menu{
+		background: var(--pastel);
+		margin: 0;
+		padding: 0;
+		position: static;
+		flex-direction: row;
+		height: 100%;
+		width: 100%;
+		justify-content: flex-start;
+	}
+
+	.menu a{
+		color: var(--verde-1);
+		font-size: 1rem;
+		width: 100%;
+		height: 2rem;
+		transition: all 0.3s ease-out;
+	}
+
+	.menu a:hover{
+		background: transparent;
+		color: var(--verde-3);
+	}
+
+}
