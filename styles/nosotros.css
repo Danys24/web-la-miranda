@@ -46,6 +46,10 @@ p{
 	margin-bottom: 2rem;
 }
 
+.nosotros{
+	min-height: 100vh;
+}
+
 
 @media (min-width: 1024px){
 
