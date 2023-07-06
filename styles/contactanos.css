@@ -40,8 +40,8 @@ h1{
 }
 
 .card-contact svg{
-	width: 2.5rem !important;
-	height: 2.5rem !important;
+	width: 2.2rem !important;
+	height: 2.2rem !important;
 	padding-right: 1rem;
 }
 
@@ -53,6 +53,8 @@ h1{
 .cards-contacto{
 	width: 100%;
 	padding: 1rem;
+	display: flex;
+	flex-direction: column;
 }
 
 .contactanos{
@@ -95,28 +97,36 @@ h1{
 
 @media (min-width: 1024px){
 	.container-cards{
+		width: 90%;
 		padding: 1rem;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
 
 	.container-cards .ubicacion{
-		width: 55%;
+		width: 100%;
 		height: 18.5rem;
-		margin-right: 1rem;
 		border-radius: 5px;
 	}
 
-	.container-cards .cards-contacto{
-		width: 45%;
+	.cards-contacto{
+		width: 100%;
+		flex-direction: row;
+	}
+
+	.cards-contacto .card-contact{
+		width: 31%;
+		margin: 0.5rem;
+	}
+
+
+	.card-contact p{
+		font-size: 0.8rem !important;
 	}
 
 }
 
 
-@media (min-width: 1024px){
-
-}
 
