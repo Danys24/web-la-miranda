@@ -40,7 +40,6 @@ img{
 p{
 	color: var(--color-t1);
 	text-align: justify;
-	margin: 0;
 }
 
 .container-nosotros{
@@ -52,7 +51,9 @@ p{
 }
 
 
-@media (min-width: 1024px){
-
+@media (min-width: 744px){
+	p{
+		margin: 0;
+	}
 
 }
